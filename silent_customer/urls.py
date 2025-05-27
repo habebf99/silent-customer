@@ -42,8 +42,7 @@ def callback(request):
     refresh_token = token_data.get('refresh_token')
     expires_in = token_data.get('expires_in')
     
-    # تخزين التوكن في قاعدة البيانات
-    store_id = request.GET.get('merchant', 'habeeb')  # جيب store_id من الاستجابة
+    store_id = request.GET.get('merchant', 'habeeb')
     SallaToken.objects.create(
         store_id=store_id,
         access_token=access_token,
