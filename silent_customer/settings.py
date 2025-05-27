@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 import os
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'default-secret-key-for-local-use')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['silent-customer.onrender.com']
 
 
 # Application definition
